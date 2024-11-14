@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",async()=>{let t=document.getElementById("artic-card");try{t.innerHTML=(await (await fetch(JsonArtic)).json()).artic.map(createCardTemplate).join("")}catch{t.innerHTML=errorMessage}});
